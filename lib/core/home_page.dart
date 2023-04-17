@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 import 'package:snapshot/movies/presentation/screens/movies_screen.dart';
 import 'package:snapshot/tv_shows/presentation/screens/tvshows_screen.dart';
+import 'package:snapshot/watch_list/presentation/screens/watchlist_screen.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -30,7 +31,7 @@ class HomePage extends StatelessWidget {
             screens: [
               MoviesScreen(),
               TvShowsScreen(),
-              Center(child: Text("Watchlist",style: TextStyle(fontSize: 30),),),
+              WatchlistScreen(),
             ],
             items: [
               PersistentBottomNavBarItem(

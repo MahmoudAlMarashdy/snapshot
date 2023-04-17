@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:snapshot/movies/presentation/views/popular_movies_view.dart';
 import 'package:snapshot/movies/presentation/widgets/nowplaying_movies_slider.dart';
 
 class MoviesScreen extends StatelessWidget {
@@ -6,12 +7,11 @@ class MoviesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        children: [
-          NowPlayingMoviesSlider(),
-        ],
-      ),
+    return Column(
+      children: [
+        NowPlayingMoviesSlider(),
+        PopularMoviesView(),
+      ],
     );
   }
 }
