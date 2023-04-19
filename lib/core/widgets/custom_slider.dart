@@ -1,14 +1,14 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
-class NowPlayingSlider extends StatefulWidget {
-  const NowPlayingSlider({Key? key}) : super(key: key);
+class CustomSlider extends StatefulWidget {
+  const CustomSlider({Key? key}) : super(key: key);
 
   @override
-  State<NowPlayingSlider> createState() => _NowPlayingSliderState();
+  State<CustomSlider> createState() => _CustomSliderState();
 }
 
-class _NowPlayingSliderState extends State<NowPlayingSlider> {
+class _CustomSliderState extends State<CustomSlider> {
 
   int currentCarouselIndex = 0;
   final CarouselController carouselController = CarouselController();
@@ -38,8 +38,11 @@ class _NowPlayingSliderState extends State<NowPlayingSlider> {
         CarouselSlider.builder(
           itemCount: 5,
           itemBuilder: (context,itemIndex,pageViewindex) {
-            return Placeholder(
-              child: Center(child: Text("${itemIndex + 1}"),),
+            return InkWell(
+              onTap: (){},
+              child: Placeholder(
+                child: Center(child: Text("${itemIndex + 1}"),),
+              ),
             );
           },
           carouselController: carouselController,
