@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:snapshot/movies/presentation/views/popular_movies_view.dart';
-import 'package:snapshot/movies/presentation/widgets/nowplaying_movies_slider.dart';
+import 'package:snapshot/movies/presentation/views/nowplaying_movies_slider.dart';
 
 class MoviesScreen extends StatelessWidget {
   const MoviesScreen({Key? key}) : super(key: key);
