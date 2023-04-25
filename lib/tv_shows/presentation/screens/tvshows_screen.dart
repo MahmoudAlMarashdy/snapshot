@@ -15,7 +15,6 @@ class TvShowsScreen extends StatelessWidget {
           NowPlayingTvShowsView(),
           PopularTvShowsView(),
           LatestTvShowsView(),
-          TopRatedTvShowsView(),
         ],
       ),
     );

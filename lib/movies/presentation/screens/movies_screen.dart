@@ -15,7 +15,6 @@ class MoviesScreen extends StatelessWidget {
           NowPlayingMoviesView(),
           PopularMoviesView(),
           LatestMoviesView(),
-          TopRatedMoviesView(),
         ],
       ),
     );

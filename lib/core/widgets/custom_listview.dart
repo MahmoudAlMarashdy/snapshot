@@ -36,10 +36,10 @@ class CustomListView extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               itemCount: 6,
               itemBuilder: (context,index){
-                return InkWell(
-                  onTap: (){},
-                  child: SizedBox(
-                    width: 120,
+                return SizedBox(
+                  width: 120,
+                  child: InkWell(
+                    onTap: (){},
                     child: Card(
                       color: Colors.cyan,
                       child: Center(child: Text('$index',style: TextStyle(fontSize: 20),)),
